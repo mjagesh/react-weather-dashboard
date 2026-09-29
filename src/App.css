@@ -1,0 +1,116 @@
+.app {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+
+  padding: 70px 0 100px;
+}
+
+/* Header */
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding: 6px 10px;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+
+  color: #7c8795;
+
+  border: 1px solid #1c2733;
+  border-radius: 6px;
+
+  background: #0d1118;
+}
+
+.app-header h1 {
+  margin: 0;
+
+  font-size: clamp(36px, 6vw, 58px);
+  font-weight: 700;
+
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.app-header h1 span {
+  color: #667585;
+}
+
+.app-description {
+  max-width: 500px;
+
+  margin: 18px auto 0;
+
+  color: #707b88;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.header-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0;
+}
+
+/* Global focus */
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #526b80;
+  outline-offset: 2px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .app {
+    width: min(94%, 650px);
+
+    padding: 45px 0 70px;
+  }
+
+  .app-header h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .app-description {
+    font-size: 13px;
+  }
+}
+
+.app-footer {
+  width: 100%;
+  max-width: 650px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin: 50px auto 0;
+  padding-top: 20px;
+
+  border-top: 1px solid #151d26;
+
+  font-size: 9px;
+  color: #4f5b68;
+}
+
+@media (max-width: 600px) {
+  .app-footer {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 40px;
+  }
+}

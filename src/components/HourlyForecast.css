@@ -1,0 +1,135 @@
+.hourly-section {
+  width: 100%;
+  max-width: 650px;
+  margin: 38px auto 0;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading span {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #66717e;
+}
+
+.section-heading h2 {
+  margin-top: 6px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  color: #dce2e8;
+}
+
+/* Horizontal list */
+
+.hourly-list {
+  display: flex;
+
+  gap: 10px;
+
+  overflow-x: auto;
+
+  padding: 4px 2px 14px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #29313b transparent;
+
+  overscroll-behavior-inline: contain;
+}
+
+.hourly-list::-webkit-scrollbar {
+  height: 4px;
+}
+
+.hourly-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hourly-list::-webkit-scrollbar-thumb {
+  background: #29313b;
+  border-radius: 10px;
+}
+
+/* Hour card */
+
+.hourly-card {
+  position: relative;
+
+  flex: 0 0 82px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 16px 9px;
+
+  background: #0d1118;
+
+  border: 1px solid #1b2530;
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.hourly-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #2a3948;
+  background: #10161e;
+}
+
+/* Current hour */
+
+.hourly-card.current {
+  border-color: #344b60;
+
+  background:
+    radial-gradient(circle at top, rgba(35, 82, 130, 0.25), transparent 65%),
+    #0e141c;
+}
+
+.hourly-current {
+  position: absolute;
+
+  top: 7px;
+
+  font-size: 7px;
+  letter-spacing: 1px;
+
+  color: #8295a8;
+}
+
+/* Content */
+
+.hourly-time {
+  margin-top: 4px;
+
+  font-size: 10px;
+  color: #788391;
+}
+
+.hourly-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9baebe;
+}
+
+.hourly-temperature {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hourly-rain {
+  font-size: 9px;
+  color: #718091;
+}

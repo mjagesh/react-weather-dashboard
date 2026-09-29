@@ -1,0 +1,173 @@
+.daily-section {
+  width: 100%;
+  max-width: 650px;
+  margin: 40px auto 0;
+}
+
+.daily-list {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border: 1px solid #1b2530;
+  border-radius: 16px;
+}
+
+/* Day */
+
+.daily-card {
+  display: grid;
+
+  grid-template-columns:
+    100px
+    minmax(150px, 1fr)
+    70px
+    90px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 17px 20px;
+
+  background: #0d1118;
+
+  border-bottom: 1px solid #1b2530;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.daily-card:last-child {
+  border-bottom: none;
+}
+
+.daily-card:hover {
+  background: #10161e;
+}
+
+/* Today */
+
+.daily-card.today {
+  background:
+    linear-gradient(90deg, rgba(35, 82, 130, 0.12), transparent), #0e141b;
+}
+
+/* Day name */
+
+.daily-day {
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #dce2e8;
+}
+
+/* Condition */
+
+.daily-condition {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+
+  color: #8a96a4;
+  font-size: 12px;
+}
+
+.daily-condition span:last-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.daily-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  color: #9baebe;
+}
+
+/* Rain */
+
+.daily-rain {
+  font-size: 9px;
+
+  color: #718091;
+
+  text-align: center;
+}
+
+/* Temperature */
+
+.daily-temperature {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 8px;
+}
+
+.daily-temperature strong {
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #e1e6eb;
+}
+
+.daily-temperature span {
+  font-size: 14px;
+
+  color: #697583;
+}
+
+@media (max-width: 600px) {
+  .daily-section {
+    margin-top: 35px;
+  }
+
+  .daily-card {
+    grid-template-columns:
+      70px
+      minmax(0, 1fr)
+      55px
+      70px;
+
+    gap: 8px;
+
+    padding: 15px 12px;
+  }
+
+  .daily-day {
+    font-size: 11px;
+  }
+
+  .daily-condition {
+    font-size: 10px;
+  }
+
+  .daily-icon {
+    font-size: 20px;
+  }
+
+  .daily-rain {
+    font-size: 8px;
+  }
+
+  .daily-temperature {
+    gap: 5px;
+  }
+
+  .daily-temperature strong {
+    font-size: 14px;
+  }
+
+  .daily-temperature span {
+    font-size: 12px;
+  }
+}

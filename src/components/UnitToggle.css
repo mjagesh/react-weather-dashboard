@@ -1,0 +1,35 @@
+.unit-toggle {
+  display: inline-flex;
+
+  margin-top: 20px;
+
+  padding: 4px;
+
+  background: #0d1118;
+
+  border: 1px solid #1b2530;
+
+  border-radius: 10px;
+}
+
+.unit-toggle button {
+  min-width: 48px;
+
+  padding: 8px 13px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #687482;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.unit-toggle button.active {
+  background: #1c2733;
+  color: #ffffff;
+}

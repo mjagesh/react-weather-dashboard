@@ -1,0 +1,43 @@
+.forecast-skeleton {
+  width: 100%;
+}
+
+.forecast-skeleton .section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.forecast-skeleton-list {
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.forecast-skeleton-card {
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px;
+  border-radius: 12px;
+
+  background: #f8fafc;
+}
+
+.hourly-skeleton .forecast-skeleton-card {
+  width: 90px;
+}
+
+.daily-skeleton .forecast-skeleton-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.daily-skeleton .forecast-skeleton-card {
+  min-width: 0;
+}
