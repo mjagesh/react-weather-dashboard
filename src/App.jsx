@@ -44,6 +44,7 @@ const App = () => {
 
       <footer className="app-footer">
         <span>Weather data powered by Open-Meteo</span>
+        <p>© 2026 Jagesh Madhaiyan · Weather Dashboard</p>
 
         <span>Built with React</span>
       </footer>
